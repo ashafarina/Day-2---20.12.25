@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class RoomCharge {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int days, type, bill;
+
+        System.out.println("1.General  2.Special");
+        type = sc.nextInt();
+
+        System.out.print("Enter number of days: ");
+        days = sc.nextInt();
+
+        if (type == 1)
+            bill = days * 1000;
+        else
+            bill = days * 2500;
+
+        System.out.println("Total Bill: ₹" + bill);
+    }
+}
